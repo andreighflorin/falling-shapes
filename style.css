@@ -1,0 +1,95 @@
+:root {
+  --bg: #0f1724;
+  --accent: #4f46e5;
+  --stat-bg: #1f2937;
+  --button-bg: #374151;
+  --text-color: #e6eef6;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #e6eef6;
+}
+
+#canvas-area {
+  width: 100%;
+  height: 100%;
+  background: #111827;
+  will-change: transform;
+}
+
+#stats {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  border: 1px solid #4f46e5;
+  border-radius: 4px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+#stats div {
+  padding: 4px 8px;
+  background: #1f2937;
+}
+
+#stats div + div {
+  border-left: 1px solid #4f46e5;
+}
+
+#controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #4f46e5;
+  border-radius: 4px;
+  background: #1f2937;
+  overflow: hidden;
+}
+
+.control-group span.label {
+  padding: 4px 8px;
+  border-right: 1px solid #4f46e5;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.control-group .buttons {
+  display: flex;
+  align-items: center;
+}
+
+.control-group button {
+  background: #374151;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.control-group button:hover {
+  background: #4f46e5;
+}
+
+.control-group span.value {
+  min-width: 24px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 6px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Falling Shapes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" defer></script>
+  <script type="module" src="main.js" defer></script>
+</head>
+<body>
+  <div id="canvas-area"></div>
+
+  <div id="stats">
+    <div>Number of shapes: <span id="shapes-count">0</span></div>
+    <div>Surface area: <span id="shapes-area">0</span> px²</div>
+  </div>
+
+  <div id="controls">
+    <div class="control-group">
+      <span class="label">Shapes/s</span>
+      <div class="buttons">
+        <button id="spawn-dec">-</button>
+        <span class="value" id="spawn-rate">1</span>
+        <button id="spawn-inc">+</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <span class="label">Gravity</span>
+      <div class="buttons">
+        <button id="grav-dec">-</button>
+        <span class="value" id="gravity-val">1</span>
+        <button id="grav-inc">+</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
